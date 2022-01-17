@@ -26,12 +26,12 @@
 - 04-git常用命令实战
 
 ## Git Project
-- Git的命令集合
-- Git的冲突解决
-- Git的多commit合并
-- Git的PR的流程
-- Git的版本回退
-- Git的自动多次提交
+- git的命令集合
+- git的冲突解决
+- git的多commit合并
+- git的PR的流程
+- git的版本回退
+- git的自动多次提交
 
 ## Git Interview Questions
 
