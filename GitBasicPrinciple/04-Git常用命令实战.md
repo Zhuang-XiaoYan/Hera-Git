@@ -681,9 +681,9 @@ hs_err_pid*
 
 ![image-20210919040319020](https://i.loli.net/2021/09/19/GaYv1BVDEgLnrAk.png)
 
-#六、IDEA 集成 GitHub
+# 六、IDEA 集成 GitHub
 
-##6.1 设置 GitHub 账号
+## 6.1 设置 GitHub 账号
 
 **通过账号密码设置**
 
@@ -735,7 +735,7 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 ![image-20210919043630909](https://i.loli.net/2021/09/19/deXxBmpvEaLMhV7.png)
 
-##6.2 分享工程到 GitHub
+## 6.2 分享工程到 GitHub
 
 我们一般会先在远程库创建一个`Repository`，再将本地库通过`remote`关联到远程库，最后进行版本推送
 
@@ -757,7 +757,7 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 ![image-20210919045442918](https://i.loli.net/2021/09/19/eHWxhpXrS6GtcIm.png)
 
-##6.3 Push 推送本地分支到远程库
+## 6.3 Push 推送本地分支到远程库
 
 ![image-20210919045841143](https://i.loli.net/2021/09/19/BWsO5Qf7oKUwELM.png)
 
@@ -783,7 +783,7 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 **注意**：`push`是将本地库代码推送到远程库，如果本地库代码跟远程库代码版本不一致， `push`的操作是会被拒绝的。也就是说，要想 `push`成功，一定要保证本地库的版本要比远程库的版本高！<mark>因此一个成熟的程序员在动手改本地代码之前，一定会先检查下远程库跟本地代码的区别！如果本地的代码版本已经落后，切记要先`pull`拉取一下远程库的代码，将本地代码更新到最新以后，然后再修改，提交，推送！</mark>
 
-##6.4 Pull 拉取远程库到本地
+## 6.4 Pull 拉取远程库到本地
 
 首先先修改远程库代码，然后进行如下操作
 
@@ -821,14 +821,14 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 ![image-20210919140005154](https://i.loli.net/2021/09/19/czytGlwKfYdbE2n.png)
 
-#七、国内代码托管中心：码云
+# 七、国内代码托管中心：码云
 
 众所周知，GitHub 服务器在国外，使用 GitHub 作为项目托管网站，如果网速不好的话，严重影响使用体验，
 甚至会出现登录不上的情况。针对这个情况，大家也可以使用国内的项目托管网站-码云
 码云是开源中国推出的基于 Git 的代码托管服务中心，网址是 [https://gitee.com/](https://gitee.com/)，
 使用方式跟 GitHub 一样，而且它还是一个中文网站，如果你英文不是很好它是最好的选择
 
-##7.1 创建远程库
+## 7.1 创建远程库
 
 ![image-20210919141130444](https://i.loli.net/2021/09/19/CpE3QtJ28brYSDq.png)
 
@@ -840,7 +840,7 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 ![image-20210919142145264](https://i.loli.net/2021/09/19/CULcZKBStwfe3sk.png)
 
-##7.2 删除远程库
+## 7.2 删除远程库
 
 打开项目`管理`—`仓库设置`—`删除仓库`，点击`删除仓库`
 
@@ -854,7 +854,7 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 ![image-20210919141636996](https://i.loli.net/2021/09/19/4gSBl7K2LHdiprm.png)
 
-##7.3 IDEA 集成码云
+## 7.3 IDEA 集成码云
 
 首先安装 Gitee 的插件
 
@@ -874,7 +874,7 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 ![image-20210919143526220](https://i.loli.net/2021/09/19/UdGyi1nMHrBqjVX.png)
 
-##7.4 分享工程到 Gitee
+## 7.4 分享工程到 Gitee
 
 ![image-20210919143925298](https://i.loli.net/2021/09/19/CIGUkng89KJ1oqy.png)
 
@@ -890,7 +890,7 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 ![image-20210919144634126](https://i.loli.net/2021/09/19/23YzcKHs7p5gjqf.png)
 
-##7.5 推送本地分支到远程库
+## 7.5 推送本地分支到远程库
 
 修改内容，可以在左侧导航栏`Commit`直接进行提交并推送
 
@@ -904,7 +904,7 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 ![image-20210919145404382](https://i.loli.net/2021/09/19/AbYVFgop48wh5yK.png)
 
-##7.6 拉取远程库到本地
+## 7.6 拉取远程库到本地
 
 直接在 Gitee 上修改`Test.java`内容后，IDEA 中进行`Pull`即可
 
@@ -918,7 +918,7 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 ![image-20210919145913298](https://i.loli.net/2021/09/19/oAstIk7crm5PLhU.png)
 
-##7.7 克隆远程库到本地
+## 7.7 克隆远程库到本地
 
 ![image-20210919150610990](https://i.loli.net/2021/09/19/BzLSQfd7knM1YoV.png)
 
@@ -956,21 +956,21 @@ Token 生成之后，只会在当前页面显示一次，需要及时复制保�
 
 ![image-20210919151954815](https://i.loli.net/2021/09/19/aJmROA4rlniydLG.png)
 
-#八、自建代码托管平台 - GitLab
+# 八、自建代码托管平台 - GitLab
 
-##8.1 GitLab 简介
+## 8.1 GitLab 简介
 
 GitLab 是由 GitLabInc. 开发，使用 MIT 许可证的基于 网络的 Git 仓库管理工具，且具有 wiki 和 issue 跟踪功能。
 使用 Git 作为代码管理工具，并在此基础上搭建起来的 web 服务
 GitLab 由乌克兰程序员 DmitriyZaporozhets 和 ValerySizov 开发，它使用 Ruby 语言写成。
 后来，一些部分用 Go 语言重写。截止 2018 年 5 月，该公司约有 290 名团队成员，以及 2000 多名开源贡献者。
 
-##8.2 GitLab 官网地址
+## 8.2 GitLab 官网地址
 
 - 官网地址：[https://about.gitlab.com/](https://about.gitlab.com/ )
 - 安装说明：[https://about.gitlab.com/installation/](https://about.gitlab.com/installation/)
 
-##8.3 GitLab 安装
+## 8.3 GitLab 安装
 ```bash
 # 服务器准备
 准备一个系统为 CentOS7 以上版本的服务器,要求,内存 4G,磁盘 50G
@@ -984,7 +984,7 @@ GitLab 由乌克兰程序员 DmitriyZaporozhets 和 ValerySizov 开发，它使�
 注:资料里提供了此 `rpm` 包,直接将此包上传到服务器`/opt/module`目录下即可
 ```
 
-##8.4 编写安装脚本
+## 8.4 编写安装脚本
 
 ```bash
 # 安装 GitLab 步骤比较繁琐，因此我们可以参考官网编写 GitLab 的安装脚本
@@ -1018,7 +1018,7 @@ chmod +x gitlab-install.sh
 
 ![image-20210919160107808](https://i.loli.net/2021/09/19/xUEMp8hCQPsf6qK.png)
 
-##8.5 初始化 GitLab 服务
+## 8.5 初始化 GitLab 服务
 
 ```bash
 # 执行以下命令初始化 GitLab 服务
@@ -1030,7 +1030,7 @@ gitlab-ctl reconfigure
 
 ![image-20210919160356614](https://i.loli.net/2021/09/19/oHXbw9vLy7Nfc3Y.png)
 
-##8.6 启动 GitLab 服务
+## 8.6 启动 GitLab 服务
 
 ```bash
 # 执行以下命令启动 GitLab 服务
@@ -1041,7 +1041,7 @@ gitlab-ctl stop
 ```
 ![image-20210919160530911](https://i.loli.net/2021/09/19/MhjB5uWJLCvqwze.png)
 
-##8.7 使用浏览器访问 GitLab
+## 8.7 使用浏览器访问 GitLab
 
 使用主机名或者 IP 地址即可访问 GitLab 服务，使用主机名访问需要提前配置一下 windows 的 hosts 文件
 
@@ -1059,7 +1059,7 @@ gitlab-ctl stop
 
 ![image-20210919161527493](https://i.loli.net/2021/09/19/QRMVNPos9p1huJy.png)
 
-##8.8 GitLab 创建远程库
+## 8.8 GitLab 创建远程库
 
 我这里以官网 GitLab 为例，官网地址：[https://gitlab.com/](https://gitlab.com/)
 官网还提供了 GitLab 自身的项目源码：[https://gitlab.com/gitlab-org/gitlab](https://gitlab.com/gitlab-org/gitlab)
@@ -1078,7 +1078,7 @@ gitlab-ctl stop
 
 ![image-20210919164852273](https://i.loli.net/2021/09/19/vha8kXCZRr1nUdY.png)
 
-##8.9 IDEA 集成 GitLab
+## 8.9 IDEA 集成 GitLab
 
 1）安装 GitLab 插件
 
