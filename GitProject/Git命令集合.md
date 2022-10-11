@@ -5,6 +5,7 @@ Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个�
 Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。
 
 # git-config
+
 ```bash
 1. 配置命令:
 git config --global user.name "xxx"

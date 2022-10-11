@@ -1,19 +1,8 @@
 # Git的基本的命令操作
 
-## 官网及下载地址
-- :link: Git官网：[http://git-scm.com/](http://git-scm.com/)
-- :link: GitHub官网：[https://github.com/](https://github.com/)
-- :link: Gitee官网：[https://gitee.com/](https://gitee.com/)
-- :link: GitLab官网：[https://gitlab.com/](https://gitlab.com/)
-- :link: GitLab首页：[https://about.gitlab.com/](https://about.gitlab.com/)
-- :link: Git 快速下载地址：[https://npm.taobao.org/mirrors/git-for-windows/](https://npm.taobao.org/mirrors/git-for-windows/)
-- :link: GitLab安装说明：[https://about.gitlab.com/installation/](https://about.gitlab.com/installation/)
-- :link: GitLab安装包：[https://packages.gitlab.com/gitlab](https://packages.gitlab.com/gitlab)
-- :link: GitLab源码地址：[https://gitlab.com/gitlab-org/gitlab](https://gitlab.com/gitlab-org/gitlab)
+#一、 Git 基本命令语法
 
-## Git 基本命令语法
-
-### 1、Git 初始化配置
+## 1.1 Git config命令
 
 ```bash
 git --version  					   #Git版本
@@ -43,7 +32,7 @@ git config --list                                  #查看所有配置（项目�
 git init                                           #初始化本地库
 ```
 
-### 2、Git 状态
+## 1.2 Git 状态命令
 
 ```bash
 git status         #查看本地库状态
@@ -52,7 +41,7 @@ git diff --cached  #查看哪些暂存还没有提交
 git diff --staged  #查看哪些暂存还没有提交
 ```
 
-### 3、Git 基本命令
+## 1.3 Git 提交命令
 
 ```bash
 git add 文件名                    #添加至暂存区
@@ -65,7 +54,7 @@ git reset [--mixed] commithash   #HEAD、暂存区
 git reset --hard commithash      #HEAD、暂存区、工作区（版本穿梭）
 ```
 
-### 4、Git 历史记录
+## 1.4 Git 查看历史记录
 
 ```bash
 git reflog                                 #引用日志
@@ -77,28 +66,29 @@ git log --oneline --decorate               #查看当前分支所指对象
 git log --oneline --decorate --graph --all #查看所有分支历史
 ```
 
-### 5、Git 分支操作
+## 1.5 Git 分支操作
 
 ```bash
-git branch 分支名 [commithash]  #创建分支
-git branch [-v]                 #查看分支
-git checkout [-b] 分支名        #[创建并]切换分支
-git merge 分支名                #合并分支
-git branch -D/-d name          #(强制)删除分支
+git branch -b 新的分支名             #创建新的分支
+git branch                         #查看当前分支
+git checkout 其他分支名              #切换其他分支
+git merge 分支名                    #合并分支名
+git branch -D/-d name              #(强制)删除本地分支
+git push origin --delete 分支名     #(强制)删除远端分支
 ```
 
-### 6、Git 撤回与重置
+## 1.6 Git 撤回与重置
 
 ```bash
 git checkout -- file            #撤回修改
 git reset [--mixed HEAD] file   #撤回暂存
-git commit --amend              #撤回提交
+git commit --amend              #重置commit信息
 git reset --soft commithash     #重置HEAD
 git reset [--mixed] commithash  #重置HEAD、暂存区
 git reset --hard commithash     #重置HEAD、暂存区、工作区
 ```
 
-### 7、Git 远程操作
+## 1.7 Git 远程操作
 
 ```bash
 git remote add 别名 远程地址             #定义别名
@@ -113,7 +103,7 @@ git checkout -b 本地分支名 远程跟踪分支名  #创建本地分支并跟
 git checkout --track 远程跟踪分支名       #创建本地分支并跟踪远程分支
 ```
 
-### 8、其他命令
+## 1.8 其他命令
 
 ```bash
 git rm 文件名               #移除文件并暂存
@@ -125,5 +115,47 @@ git stash drop             #加上将要移除的储藏的名字来移除它
 git stash pop              #来应用储藏然后立即从栈上扔掉它
 ssh-keygen -t rsa [-C 描述] #SSH免密登录生成密钥
 ssh -T git@github.com       #测试配置是否成功
+```
+
+## 1.9 基本命令
+
+```bash
+git remote -v   #查看信息 
+
+origin  https://github.com/tianqixin/runoob-git-test (fetch)
+origin  https://github.com/tianqixin/runoob-git-test (push) 
+```
+
+```bash
+git remote add origin git@github.com:tianqixin/runoob-git-test.git   #添加远程版本库
+
+origin  https://github.com/tianqixin/runoob-git-test (fetch)
+origin  https://github.com/tianqixin/runoob-git-test (push) 
+
+git remote add upstream *****.git     #添加远程版本库 
+
+upstream  https://github.com/tianqixin/runoob-git-test (fetch)
+upstream  https://github.com/tianqixin/runoob-git-test (push) 
+
+git remote rm name  # 删除远程仓库
+
+git remote rename old_name new_name  # 修改仓库名
+```
+
+```bash
+git fetch origin    # 你想要从origin提取更新的数据
+git fetch upstream  # 你想要从upstream提取更新的数据
+```
+
+```bash
+git merge origin    # 从远端仓库提取数据并尝试合并到当前分支（所有的分支）
+git merge origin branch #从origin branch提取数据并尝试合并到当前分支
+git pull origin master  的操作就相当于 git fetch origin master 和 git merge origin/master 这两步操作
+git merge origin branchA 相当于 git merge origin/master branchA
+```
+
+```bash
+git merge origin(远程master分支) master(本地分支master) # 是将远程分支master在本地的副本和本地的master分支合并到当前分支
+git merge origin/master                              # 是合并远程分支master在本地的副本
 ```
 
