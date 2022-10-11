@@ -159,3 +159,8 @@ git merge origin(远程master分支) master(本地分支master) # 是将远程�
 git merge origin/master                              # 是合并远程分支master在本地的副本
 ```
 
+```bash
+git merge branchA branchB branchC ....    # git merge 后面跟的都是要合并到当前分支的分支名称，不存在要合并到其他分支上的意思
+```
+
+
