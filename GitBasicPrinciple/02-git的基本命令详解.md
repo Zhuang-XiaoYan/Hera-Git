@@ -164,3 +164,8 @@ git merge branchA branchB branchC ....    # git merge 后面跟的都是要合�
 ```
 
 
+```bash
+merge 用作分支合并，将其他分支的内容合并到当前分支。
+```
+
+
