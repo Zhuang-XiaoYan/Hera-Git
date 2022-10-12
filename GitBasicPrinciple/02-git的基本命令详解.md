@@ -166,3 +166,12 @@ git merge origin/master                              # 是合并远程分支mast
 ```bash
 git merge branchA branchB branchC ....    # git merge 后面跟的都是要合并到**当前分支**的分支名称，不存在要合并到其他分支上的意思
 ```
+
+```bash
+#参数base-commit就是指明操作的基点提交对象，基于这个基点进行 rebase 的操作，我们要把最后的一个提交对象（base-commit）之前的提交压缩成一次提交
+
+git rebase -i <base-commit>  
+
+```
+
+![img.png](images/gitrebase.png)
