@@ -35,10 +35,13 @@ git init                                           #初始化本地库
 ## 1.2 Git 状态命令
 
 ```bash
-git status         #查看本地库状态
-git diff           #查看那些更新还没有暂存
-git diff --cached  #查看哪些暂存还没有提交
-git diff --staged  #查看哪些暂存还没有提交
+git status                   #查看本地库状态
+git diff                     #查看那些更新还没有暂存
+git diff --cached            #查看哪些暂存还没有提交
+git diff --staged            #查看哪些暂存还没有提交
+git diff branch1 branch2     #查看branch1和branch2的区别
+git diff --stat              #显示摘要而非整个 diff
+git diff HEAD                #查看已缓存的与未缓存的所有改动
 ```
 
 ## 1.3 Git 提交命令
@@ -80,12 +83,14 @@ git push origin --delete 分支名     #(强制)删除远端分支
 ## 1.6 Git 撤回与重置
 
 ```bash
-git checkout -- file            #撤回修改
-git reset [--mixed HEAD] file   #撤回暂存
-git commit --amend              #重置commit信息
-git reset --soft commithash     #重置HEAD
-git reset [--mixed] commithash  #重置HEAD、暂存区
-git reset --hard commithash     #重置HEAD、暂存区、工作区
+git checkout -- file                      # 撤回修改
+git reset [--mixed HEAD] file             # 撤回暂存
+git commit --amend                        # 重新提交commit messgae
+git reset --soft commithash value         # --soft 参数用于回退到某个版本
+git reset [--mixed] commithash value      # 重置HEAD、暂存区
+git reset --hard commithash value         # 重置HEAD、暂存区、工作区
+git reset commit value                    # 表示的回退到指定的版本
+
 ```
 
 ## 1.7 Git 远程操作
@@ -117,7 +122,15 @@ ssh-keygen -t rsa [-C 描述] #SSH免密登录生成密钥
 ssh -T git@github.com       #测试配置是否成功
 ```
 
-## 1.9 基本命令
+# 1.9 git add命令
+
+```bash
+git add [file1] [file2] ...   # 添加一个或多个文件到暂存区
+git add [dir]                 # 添加指定目录到暂存区，包括子目录： 
+git add .                     # 添加所有的文件到暂存区
+```
+
+## 1.10 git的其他相关命令操作
 
 ```bash
 git remote -v   #查看信息 
@@ -140,6 +153,9 @@ upstream  https://github.com/tianqixin/runoob-git-test (push)
 git remote rm name  # 删除远程仓库
 
 git remote rename old_name new_name  # 修改仓库名
+
+git remote rm origin	# 删除远程仓库（解绑）
+git remote rm upstream
 ```
 
 ```bash
@@ -171,7 +187,21 @@ git merge branchA branchB branchC ....    # git merge 后面跟的都是要合�
 #参数base-commit就是指明操作的基点提交对象，基于这个基点进行 rebase 的操作，我们要把最后的一个提交对象（base-commit）之前的提交压缩成一次提交
 
 git rebase -i <base-commit>  
-
 ```
 
 ![img.png](images/gitrebase.png)
+
+
+```bash
+# 产生ssh文件
+ssh-keygen -t rsa -C "youremail@example.com"	# 创建SSH Key  ssh/rsa.pub
+```
+
+
+
+
+
+
+
+
+
