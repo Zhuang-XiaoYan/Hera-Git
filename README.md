@@ -21,18 +21,12 @@
 ![Image text](Xmind/git原理.png)
 
 ## Git Basic Principle
-- 01-git的基本概述
-- 02-git的安装
-- 03-git的基本的命令
-- 04-git常用命令实战
+- 01-git的基本概述.md
+- 02-git的基本命令详解.md
+- 03-Git常用命令实战.md
 
 ## Git Project
-- git的命令集合
-- git的冲突解决
-- git的多commit合并
-- git的PR的流程
-- git的版本回退
-- git的自动多次提交
+- 团队提交PR的流程.md
 
 ## Git Interview Questions
 
