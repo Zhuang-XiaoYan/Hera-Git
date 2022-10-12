@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a39c6b5e-c92f-4410-8cdf-d9291d71e262" name="Changes" comment="feat(Git) [xjl028] 更新git命令文件test">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/GitPrinciple.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a39c6b5e-c92f-4410-8cdf-d9291d71e262" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="test1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,6 +74,7 @@
       <workItem from="1655608951543" duration="10000" />
       <workItem from="1659346047543" duration="637000" />
       <workItem from="1665493235799" duration="8790000" />
+      <workItem from="1665581039352" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="feat(Git) [xjl025] add git pull code file and image.">
       <created>1650160544668</created>
@@ -133,7 +125,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665501555911</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(Git) [xjl028] 更新git命令文件test2">
+      <created>1665581098616</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665581098616</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(Git) [xjl028] 更新git命令文件test1">
+      <created>1665581126888</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665581126888</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +165,8 @@
     <MESSAGE value="feat(Git) [xjl028] 更新git命令文件test" />
     <MESSAGE value="feat(Git) [xjl028] 更新git命令文件" />
     <MESSAGE value="feat(Git) [xjl029] 更新git命令文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Git) [xjl029] 更新git命令文件" />
+    <MESSAGE value="feat(Git) [xjl028] 更新git命令文件test2" />
+    <MESSAGE value="feat(Git) [xjl028] 更新git命令文件test1" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Git) [xjl028] 更新git命令文件test1" />
   </component>
 </project>
