@@ -118,7 +118,7 @@ git stash list             #查看存储
 git stash apply stash@{2}  #如果不指定一个储藏，Git认为指定的是最近的储藏
 git stash drop             #加上将要移除的储藏的名字来移除它
 git stash pop              #来应用储藏然后立即从栈上扔掉它
-ssh-keygen -t rsa [-C 描述] #SSH免密登录生成密钥
+ssh-keygen -t rsa -C "youremail@example.com"  #SSH免密登录生成密钥
 ssh -T git@github.com       #测试配置是否成功
 ```
 
