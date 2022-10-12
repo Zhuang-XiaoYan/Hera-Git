@@ -144,6 +144,10 @@ git remote rename old_name new_name  # 修改仓库名
 
 ```bash
 git fetch origin    # 你想要从origin提取更新的数据
+
+git fetch origin 仓库的分支名   # 将远端仓库的分支的拉取暂存区 
+git rebase origin/仓库的分支名  # 将远端仓库的分支于当前分支合并没有记录
+git merege origin/仓库的分支名  # 将远端仓库的分支于当前分支合并同时有新的提交记录
 git fetch upstream  # 你想要从upstream提取更新的数据
 ```
 
