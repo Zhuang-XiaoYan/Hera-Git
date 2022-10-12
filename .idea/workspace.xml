@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a39c6b5e-c92f-4410-8cdf-d9291d71e262" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+=======
+    <list default="true" id="a39c6b5e-c92f-4410-8cdf-d9291d71e262" name="Changes" comment="feat(Git) [xjl028] 更新git命令文件test">
+      <change beforePath="$PROJECT_DIR$/GitBasicPrinciple/02-git的基本命令详解.md" beforeDir="false" afterPath="$PROJECT_DIR$/GitBasicPrinciple/02-git的基本命令详解.md" afterDir="false" />
+>>>>>>> origin/test2
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
